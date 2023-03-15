@@ -17,12 +17,13 @@ describe('Fix the Scope', function() {
   describe('setBestCustomer()', function() {
     it('setBestCustomer', function() {
       expect(window.bestCustomer).to.equal(undefined);
-
+  
       setBestCustomer();
-
+  
       expect(window.bestCustomer).to.equal('not bob');
     });
   });
+  
 
   describe('overwriteBestCustomer()', function() {
     it('overwrites the best customer', function() {
